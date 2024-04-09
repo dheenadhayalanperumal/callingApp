@@ -19,10 +19,13 @@ function DashBoard() {
             }
         })
         .catch((error) => {
+            console.error(error); // Log the error to the console
             if (error.name === "NotAllowedError") {
                 setError("Please grant permission to access media devices.");
+            } else if (error.name === "NotFoundError") {
+                setError("No media devices found.");
             } else {
-                setError("An error occurred while accessing media devices.");
+                setError(`An error occurred while accessing media devices: ${error.message}`);
             }
         });
     }, []);
