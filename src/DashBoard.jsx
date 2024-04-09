@@ -20,6 +20,7 @@ const DashBoard = () => {
                 <Link to="/signup">Signup</Link>
                 <Link to="/signin">Signin</Link>
             </div>
+            <div className="text-3xl">Dashboard page</div>
             <video autoPlay controls ref={playerRef} />
         </div>
     );
