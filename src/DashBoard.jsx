@@ -49,7 +49,7 @@ function DashBoard() {
                 <Link to="/signin">Signin</Link>
             </div>
             <video ref={playerRef} autoPlay></video>
-            <div className="text-3xl">caller page1</div>
+            <div className="text-3xl">caller page</div>
         </div>
     );
 }
